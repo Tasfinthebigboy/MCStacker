@@ -6,7 +6,7 @@ This Offline Edition will NOT Update
 
 ### I couldn't add the murals because it is too big
 
-Sorry for the murals in the offline edition
+Download Murals from releases
 
 ## How to Use the Offline Edition
 
