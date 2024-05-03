@@ -4,6 +4,10 @@ Welcome to MCStacker Offline Edition
 Here you can get the free offline edition of https://mcstacker.net
 This Offline Edition will NOT Update
 
+### I couldn't add the murals because it is too big
+
+Sorry for the murals in the offline edition
+
 ## How to Use the Offline Edition
 
 ![alt text](https://github.com/Tasfinthebigboy/MCStacker/blob/main/logo.png)
