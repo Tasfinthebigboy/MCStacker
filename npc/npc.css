@@ -1,0 +1,180 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.wrapper {
+	border: #000;
+    display: grid;
+    grid-template-columns: 166px 533px;
+    grid-template-rows: 133px 20px;
+}
+.item1 {
+    grid-column-start: 1;
+	grid-column-end: 2;
+
+	
+}
+
+.vAds{
+	text-align:left;
+	max-width: 730px;
+}
+
+.item2 {
+	
+
+	grid-row-start: 2;
+	grid-row-end: 3;
+	text-align:center;
+}
+.item3 {
+    grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+h1.banner{
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 40pt;
+	margin-top: 0;
+	text-align: center;
+	color:#fe6310;
+	-webkit-text-fill-color: #fe6310;; /* Will override color (regardless of order) */
+  	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+}
+
+
+
+#baseSettings{
+	background-color:#cbc9df;
+	width:800px;
+}
+
+#outputSection{
+	margin-top: 5px;
+	background-color:#719fe8;
+	width:800px;
+}
+.outputPane{
+	background-color:#9fc3fc;
+	width:100%;
+
+	padding-right:5px;
+	box-sizing: border-box;
+}
+.outputCommands{
+	width:100%;
+	height:100px;
+	box-sizing: border-box;
+}
+
+.roundedDiv{
+	border-radius: 10px;
+	border:solid 1px black;
+	padding:5px;
+	display: inline-block;
+}
+.label{
+	text-align: right;
+	width:90px;
+	display: inline-block;
+	padding-right:4px; 
+	
+
+}
+.sectionHeading{
+	font-weight: bold;
+
+}
+
+.longField{
+	width:600px;
+
+}
+.mediumField{
+	width:200px;
+
+}
+.shortField{
+	width:50px;
+
+}
+.npcSays{
+	background-color:#b0d5d7;
+	margin-bottom:2px;
+}
+.option{
+	background-color:#ffd783;
+	margin:2px;
+}
+.commands{
+	background-color:#ffddff;
+	margin:2px;
+	/*box-sizing: border-box;*/
+}
+.command{
+	margin-bottom:2px;
+
+}
+button{
+	border-radius: 5px;
+	border:solid 1px black;
+	padding:2px;
+	font-weight:bold;
+}
+.redx{
+	color:red;
+}
+
+#dialogbox{
+	max-width:400px; 
+	background:grey;
+	display:none;
+	position: absolute;
+	border: 2px solid #000;
+	background-color:#ff6;
+	padding:10px;
+	z-index:10;
+}
+.greenPlus{
+	color:green;
+	font-weight:bold;
+	white-space: nowrap;
+	margin:1px;
+	border-radius: 5px;
+	padding-left:1px;
+	padding-right:1px;
+	font-size:10pt;
+	background-color:#fff;
+	border:solid black 1px;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;
+}
+.ads{
+	text-align:left;
+	font-size:8pt;
+	font-weight:bold;
+}
+#info{
+	width:800px;
+}
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 1px solid black;
+	
+}
+p.tut{
+	font-family: 'Courier New', Courier, monospace;
+	background-color:#ccc;
+	font-weight: bold;
+	margin-left: 40px;
+	display: inline-block;
+}
+span.tut{
+	font-family: 'Courier New', Courier, monospace;
+	background-color:#ccc;
+	font-weight: bold;
+}

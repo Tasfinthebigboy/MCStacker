@@ -1,0 +1,715 @@
+.entry {
+    display: block;
+    margin-top: 3px;
+}
+
+.lootEntries {
+    display: flex;
+    flex-direction: column;
+}
+
+#lootTableContainer {
+    /*background-color:#b3b3b3; COLOUR*/
+    min-width: 600px;
+}
+
+#lootTablePane {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hideLootTable {
+    cursor: pointer;
+    float: right;
+}
+
+#themes {
+    width: 600px;
+}
+
+.editionDiff {
+    border-collapse: collapse;
+}
+
+.editionDiff,
+.editionDiff th,
+.editionDiff td {
+    border: 1px solid var(--main-text-color);
+    text-align: center;
+    vertical-align: top;
+}
+
+#closeSettingsBut,
+#closeclipBoardBut,
+#closeImportBut,
+#closeHistory,
+#closeCommandList {
+    float: right;
+}
+
+.pool {
+    display: block;
+    margin-top: 3px;
+}
+
+.itemNBT {
+    max-width: 500px;
+    display: block;
+    height: auto;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.pageAndSection {
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+}
+
+.entityWrapper {
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-auto-rows: auto auto;
+}
+
+.entityL {
+    grid-column: 1 / 2;
+}
+
+.entityR {
+    grid-column: 2 / 3;
+}
+
+.entityB {
+    grid-column: 1 / 3;
+}
+
+#exeString {
+    width: 400px;
+    height: 30px;
+}
+
+#topPart {
+    display: inline-block;
+    width: 1000px;
+}
+
+#socialbuts {
+    float: left;
+    width: 600px;
+}
+
+#logo {
+    display: block;
+}
+
+#socialandnav {
+    width: 930px;
+    display: inline-block;
+}
+
+#nav {
+    width: 560px;
+    margin-bottom: 3px;
+    float: left;
+}
+
+#otherNav {
+    padding-left: 30px;
+    width: 310px;
+    margin-bottom: 3px;
+    float: left;
+}
+
+#dialogbox {
+    max-width: 400px;
+    display: none;
+    position: absolute;
+    padding: 10px;
+    z-index: 10;
+}
+
+.mainButtons {
+    border-radius: 10px;
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 1px;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    text-decoration: none;
+}
+
+.bigads {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.ads,
+.not_targeted {
+    text-align: left;
+    font-size: 8pt;
+    font-weight: bold;
+    max-width: 730px;
+}
+
+#settings {
+    width: 360px;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+#settingsArea {
+    /*width: 348px; 
+	height:250px;
+	margin-top:4px;*/
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#commandOutput-ta,
+#commandInput-ta,
+#clipBoard-ta {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 135px;
+    resize: none;
+}
+
+#commandOutput,
+#commandInput,
+#clipBoard,
+#diffDisplayDiv {
+    width: 500px;
+    position: fixed;
+}
+
+/*
+Some Debug Stuff
+.nbtKey{
+	width:100px;
+	text-align:right;
+	background-color:#eea; 
+}
+.nbtVal{
+	text-align:left;
+}*/
+
+.aTable {
+    border-collapse: collapse;
+}
+
+table.aTable th td {
+    border-style: none;
+    text-align: center;
+    padding: 2px;
+}
+
+.fLabel200 {
+    text-align: right;
+    display: inline-block;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.fLabel100 {
+    text-align: right;
+    display: inline-block;
+    width: 130px;
+    margin-top: 5px;
+}
+
+.fLabel40 {
+    text-align: right;
+    display: inline-block;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.fLabel150 {
+    text-align: right;
+    display: inline-block;
+    width: 150px;
+    margin-top: 5px;
+}
+
+.pageSetup {
+    float: left;
+}
+
+.pagePreview {
+    width: 200px;
+    height: 300px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.signPreview {
+    width: 180px;
+    height: 80px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.tellrawPreview {
+    min-width: 310px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.hoverPreview {
+    display: inline-block;
+    min-width: 50px;
+    max-width: 310px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.pagePreviewFrame {
+    float: left;
+    text-align: center;
+}
+
+.fLabel70 {
+    text-align: right;
+    display: inline-block;
+    width: 70px;
+    margin-top: 5px;
+}
+
+.fLabel180 {
+    text-align: right;
+    display: inline-block;
+    width: 180px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.enchantLevel {
+    white-space: nowrap;
+}
+
+.HideFlagsControl {
+    width: 400px;
+    white-space: initial;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
+}
+
+#warning {
+    border-color: red;
+    /*COLOUR*/
+    margin: 5px;
+    width: 550px;
+}
+
+.amErrorRow {
+    background-color: red;
+    /*COLOUR*/
+}
+
+.amErrorMessage {
+    color: red;
+    /*COLOUR*/
+    display: inline-block;
+    width: 600px;
+}
+
+.roundedDiv {
+    display: inline-block;
+    vertical-align: text-top;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.fallingBlock {
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #000;
+    /*COLOUR*/
+}
+
+.EnchantmentsControlSingle {
+    width: 300px;
+    white-space: initial;
+}
+
+.EnchantmentsControl {
+    width: 560px;
+    white-space: initial;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
+}
+
+.smallTF {
+    width: 20px;
+}
+
+.medTF {
+    width: 50px;
+}
+
+.bigTF {
+    width: 100px;
+}
+
+.verybigTF {
+    width: 300px;
+}
+
+.PassengerPane {
+    overflow: visible;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.ExplosionPane {
+    overflow: visible;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.tsScorePane {
+    overflow: visible;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.TradePane,
+.GossipPane {
+    overflow: visible;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.explosion {
+    overflow: visible;
+    display: block;
+    vertical-align: text-top;
+}
+
+.trade {
+    overflow: visible;
+    display: block;
+    vertical-align: text-top;
+}
+
+.gossip {
+    overflow: visible;
+    display: block;
+    vertical-align: text-top;
+}
+
+.score {
+    overflow: visible;
+    display: block;
+    vertical-align: text-top;
+}
+
+.SpawnPotentialPane {
+    overflow: visible;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.passengerContainer {
+    min-width: 600px;
+}
+
+.anchorButton {
+    white-space: nowrap;
+    margin: 1px;
+    border-radius: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.redX {
+    white-space: nowrap;
+    margin: 1px;
+    border-radius: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.greenPlus {
+    white-space: nowrap;
+    margin: 1px;
+    border-radius: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.noBorder {
+    border: none;
+}
+
+.fwColor {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+}
+
+.showHide {
+    white-space: nowrap;
+    margin: 1px;
+    border-radius: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ticks {
+    display: inline-block;
+    width: 70px;
+    white-space: nowrap;
+    margin: 1px;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.writable_book {
+    resize: none;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+    color: black;
+}
+
+.writableBookFrame {
+    text-align: center;
+    margin-left: 130px;
+    float: left;
+}
+
+#community {
+    vertical-align: text-top;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    max-width: 1000px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 3px;
+}
+
+#navPane {
+    margin-right: 5px;
+    margin-top: 5px;
+    max-width: 1000px;
+}
+
+#commandString {
+    margin-bottom: 5px;
+}
+
+.navButton {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
+.settingsLabel {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.mButton {
+    margin: 2px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pageButton,
+.pageButtonSelected {
+    margin: 2px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.search {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+table.searchResults {
+    position: relative;
+    text-align: left;
+    font-size: 10pt;
+    border-collapse: collapse;
+}
+
+table.searchResults th {
+    position: sticky;
+    top: 0;
+}
+
+table.searchResults td,
+th {
+    text-align: left;
+}
+
+.sortHeader {
+    text-decoration: none;
+}
+
+#detailsPane {
+    padding-top: 4px;
+}
+
+textarea {
+    vertical-align: text-top;
+    vertical-align: top;
+}
+
+.detsLine {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.details {
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+    width: 130px;
+}
+
+#message {
+    color: #f00;
+    /* Login Error message*/
+    padding-left: 200px;
+}
+
+#comments {
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: 975px;
+}
+
+#commentControls {
+    width: 960px;
+    padding: 5px;
+}
+
+#commentPane {
+    width: 940px;
+    padding: 5px;
+}
+
+.commentLine {
+    width: 940px;
+    margin-bottom: 10px;
+    border-top: solid 1px #999;
+    /*COLOUR*/
+    border-left: solid 1px #999;
+    /*COLOUR*/
+}
+
+.commentText {
+    width: 930px;
+    padding-left: 10px;
+}
+
+#like {
+    padding-left: 10px;
+}
+
+#heartCount {
+    color: red;
+    font-size: 17pt;
+    font-family: "Comic Sans", cursive;
+    font-weight: bold;
+}
+
+.fRight {
+    float: right;
+}
+
+.mcfunc {
+    display: inline-block;
+    float: right;
+}
+
+#mcfunctions {
+    display: inline-block;
+    margin: 2px;
+    border-radius: 5px;
+    border: solid 2px black;
+    min-width: 200px;
+    vertical-align: text-top;
+}
+
+#mcfunctionEdit {
+    display: inline-block;
+    margin: 2px;
+    border-radius: 5px;
+    vertical-align: text-top;
+}
+
+#mcfunctionPreview-ta {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 500px;
+    resize: none;
+}
+
+#mcfunctionPreview {
+    width: 800px;
+    position: fixed;
+}
+
+.itemSelectControl {
+    overflow: hidden;
+}
+
+.multiitemSelectControl {
+    overflow: hidden;
+}

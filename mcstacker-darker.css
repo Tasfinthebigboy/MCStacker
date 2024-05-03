@@ -1,0 +1,332 @@
+html {
+    color-scheme: dark;
+}
+
+:root {
+    --main-json-preview-color: #FFEBE6;
+    --main-color-a: #151515;
+    --main-color-b: #101010;
+    --main-color-c: #151515;
+    --main-color-d: #202020;
+    --main-frame-color: #888;
+    --main-button-frame-color: #888;
+    --main-button-text-color: #d34706;
+    --main-text-color: #f19216;
+    --main-button-text-hover-color: rgb(255, 115, 0);
+    --small-button-bg-color: #050505;
+    --field-bg-color: #121212;
+    --field-border-color: #888;
+    --search-result-a: #202020;
+    --search-result-b: #151515;
+    --bg-color: #111;
+    --red-text: #7d0f07;
+    --green-text: #ff6207;
+    --blue-text: #f8aa18;
+    --visited-link: #eeba0e;
+    --big-button-color-a: #151515;
+    --big-button-color-b: #101010;
+}
+
+body {
+    font-size: 10pt;
+    font-family: Arial, san-serif;
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+}
+
+a {
+    color: var(--blue-text);
+}
+
+a:visited {
+    color: var(--visited-link);
+}
+
+input,
+textarea,
+select {
+    background-color: var(--field-bg-color);
+    color: var(--main-text-color);
+    border: 1px solid var(--field-border-color);
+}
+
+#dialogbox {
+    border: 2px solid var(--main-button-frame-color);
+    background-color: var(--main-color-c);
+}
+
+.crossbowItem {
+    border-bottom: solid 2px var(--main-button-frame-color);
+}
+
+.bigads {
+    border: solid black 2px;
+    background-color: #333;
+}
+
+.bigads:hover {
+    background-color: #555;
+}
+
+.roundedDiv {
+    border: 2px solid var(--main-frame-color);
+}
+
+#executePane {
+    background-color: var(--main-color-a);
+    margin-bottom: 3px;
+}
+
+#soundPane,
+#scoreboardPane,
+#teamPane,
+#effectPane,
+#givePane,
+#blockPane,
+#particlePane,
+#tellrawPane,
+#bossbarPane,
+#lootPane,
+#lootTableContainer,
+#replaceItemPane {
+    background-color: var(--main-color-a);
+}
+
+.pagePreview,
+.writable_book,
+.signPreview,
+.tellrawPreview {
+    background-color: var(--main-json-preview-color);
+    color: black;
+    font-family: "Courier", monospace;
+    font-size: 12pt;
+}
+
+.hoverPreview {
+    background-color: #120312;
+    border: solid 2px #28055d;
+    font-family: "Courier", monospace;
+}
+
+#community {
+    background-color: var(--main-color-a);
+    border: 2px solid var(--main-frame-color);
+}
+
+table.searchResults tr.srRowDark {
+    background-color: var(--search-result-a);
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+
+table.searchResults th {
+    background-color: var(--search-result-a);
+}
+
+table.searchResults tr.srRowLight {
+    background-color: var(--search-result-b);
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+
+#commandList tr:nth-child(odd) {
+    background-color: var(--search-result-a);
+}
+
+#commandList tr:nth-child(even) {
+    background-color: var(--search-result-b);
+}
+
+#history tr:nth-child(odd) {
+    background-color: var(--search-result-a);
+}
+
+#history tr:nth-child(even) {
+    background-color: var(--search-result-b);
+}
+
+.fwColor {
+    border: 1px solid var(--main-frame-color);
+}
+
+.anchorButton {
+    color: var(--main-button-text-color);
+    background-color: var(--small-button-bg-color);
+    border: solid var(--main-button-frame-color) 1px;
+    font-family: "Arial", sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.redX {
+    color: var(--red-text);
+    background-color: var(--small-button-bg-color);
+    border: solid var(--main-button-frame-color) 1px;
+    font-family: "Arial", sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.greenPlus {
+    color: var(--green-text);
+    background-color: var(--small-button-bg-color);
+    border: solid var(--main-button-frame-color) 1px;
+    font-family: "Arial", sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.showHide {
+    color: var(--blue-text);
+    background-color: var(--small-button-bg-color);
+    border: solid var(--main-button-frame-color) 1px;
+    font-weight: bold;
+    font-size: 10pt;
+    font-family: "Arial", sans-serif;
+}
+
+.mButton,
+.ticks {
+    color: var(--main-button-text-color);
+    background-color: var(--small-button-bg-color);
+    border: solid var(--main-button-frame-color) 1px;
+    font-size: 10pt;
+    font-family: "Arial", sans-serif;
+    text-decoration: none;
+}
+
+.pageButton {
+    border: solid var(--main-button-frame-color) 2px;
+    color: var(--main-button-text-color);
+    background-color: var(--small-button-bg-color);
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+.pageButtonSelected {
+    border: solid var(--main-button-frame-color) 2px;
+    font-family: "Arial", sans-serif;
+    color: var(--main-color-a);
+    background-color: var(--main-button-text-color);
+}
+
+.navButton {
+    color: var(--main-button-text-color);
+    background-color: var(--big-button-color-a);
+    border: solid var(--main-button-frame-color) 2px;
+    font-family: "Arial", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.specialButton {
+    color: var(--main-button-text-color);
+    background-color: var(--big-button-color-a);
+    border: solid var(--main-button-frame-color) 2px;
+}
+
+.combut {
+    color: var(--main-button-text-color);
+    background-color: var(--big-button-color-a);
+    border: solid var(--main-button-frame-color) 2px;
+}
+
+.combut:hover,
+.specialButton:hover,
+.navButton:hover,
+.mButton:hover,
+.pageButton:hover {
+    color: var(--main-button-text-hover-color);
+    background-color: var(--big-button-color-b);
+}
+
+.stackerAltColorA {
+    background-color: var(--main-color-a);
+}
+
+.stackerAltColorB {
+    background-color: var(--main-color-b);
+}
+
+.tsControl {
+    background-color: var(--main-color-d);
+}
+
+.itemSelectControl {
+    background-color: var(--main-color-d);
+}
+
+.multiitemSelectControl {
+    background-color: var(--main-color-b);
+}
+
+.trade,
+.gossip,
+.EnchantmentsControl,
+.DisabledSlotsControl,
+.AEControl,
+.AMControl,
+.PoseControl,
+.MemoriesControl,
+.HideFlagsControl,
+.JSONEditor,
+.score,
+.explosion {
+    background-color: var(--main-color-c);
+}
+
+#commandOutput-ta,
+#commandInput-ta,
+#clipBoard-ta,
+#settingsArea,
+#mcfunctionPreview-ta,
+#diffDisplay {
+    background-color: var(--main-color-c);
+}
+
+#commandOutput,
+#commandInput,
+#clipBoard,
+#settings,
+#mcfunctionPreview,
+#historyDiv,
+#commandListDiv,
+#diffDisplayDiv {
+    background-color: var(--main-color-d);
+    border: solid 1px var(--main-frame-color);
+}
+
+#mcfunctions {
+    background-color: var(--main-color-b);
+    border: solid 1px var(--main-frame-color);
+}
+
+#comments {
+    border: solid 2px var(--main-frame-color);
+    background-color: var(--main-color-b);
+}
+
+.pool {
+    background-color: var(--main-color-b);
+}
+
+.entry {
+    background-color: var(--main-color-a);
+}
+
+table.update117 {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+table.update117 tr:nth-child(odd) {
+    background: var(--main-color-c);
+}
+
+table.update117 tr:nth-child(even) {
+    background: var(--main-color-d);
+}

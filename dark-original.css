@@ -1,0 +1,1007 @@
+:root {
+	--main-json-preview-color: #FFEBE6;
+	--main-color-a: #151515;
+	--main-color-b: #101010;
+	--main-color-c: #151515;
+	--main-color-d: #202020;
+	--main-frame-color:#888;
+	--main-button-frame-color:#888;
+	--main-button-text-color:#007315;
+	--main-text-color:#007315;
+	--main-button-text-hover-color:#0f0;
+	--small-button-bg-color:#050505;
+	--field-bg-color:#121212;
+	--field-border-color:#888;
+	--search-result-a:#202020;
+	--search-result-b:#151515;
+	--bg-color:#111;
+	--red-text:#7d0f07;
+	--green-text:#03542a;
+	--blue-text:#3b5fff;
+	--visited-link:#a249c9;
+	--big-button-color-a: #151515;
+	--big-button-color-b: #101010;
+  }
+
+body{
+	color:var(--main-text-color);
+	font-size:10pt;
+	font-family:Arial,san-serif;
+}
+
+.itemNBT{
+	max-width:500px;
+	display:block;
+	height:auto;
+	white-space:normal;
+	word-break: break-all;
+}
+.pool{
+	display:block;
+	margin-top:3px;
+	background-color:#dff;	
+}
+.entry{
+	display:block;
+	margin-top:3px;
+	background-color:#dfd;	
+}
+.lootEntries{
+	display:flex;
+		flex-direction: column;
+}
+#lootTableContainer{
+		background-color:rgba(97, 171, 175, 0.5);
+		min-width:600px;
+}
+
+#lootTablePane{
+		
+		min-width:600px;
+		display:flex;
+		flex-direction: column;
+}
+
+#hideLootTable{
+	cursor:pointer;
+	float:right;
+}
+#themes{
+	width:600px;	
+}
+#themeBut{
+	margin-top:20px;
+	border-radius: 5px;
+	padding-left:3px;
+	padding-right:3px;
+	margin:0 auto;
+	font-size:10pt;
+	color:#000;
+	background-color:#fff;
+	border:solid black 2px;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;	
+	cursor:pointer;
+	float:left;
+	display:block;
+	
+}
+
+.pageAndSection{
+	width:120px;
+	display:inline-block;
+	text-align:center;
+}
+.crossbowItem{
+	border-bottom:solid 2px black;
+}
+.entityWrapper {
+    display: grid;
+	grid-auto-columns: auto auto;
+	grid-auto-rows: auto auto;
+}
+
+.entityL{
+	grid-column: 1 / 2;
+}
+.entityR{
+	grid-column: 2 / 3;
+}
+.entityB{
+	grid-column: 1 / 3;
+}
+#exeString{
+	width:400px;
+	height:30px;
+}
+
+table.features td, table.features th {
+    border-style:none;
+	vertical-align:top;
+	padding:2px;
+	text-align:left;
+}
+
+table.update113{
+	border-collapse:collapse;
+	width:600px;
+}
+table.update113 th, table.update113 td{
+	border:1px solid black;
+	vertical-align:top;
+	text-align:left;
+}
+#dialogbox{
+	max-width:400px; 
+	background:grey;
+	display:none;
+	position: absolute;
+	border: 2px solid #000;
+	background-color:#ff6;
+	padding:10px;
+	z-index:10;
+}
+.combut, .specialButton {
+	border-radius: 10px;
+	float:left;
+	padding-left:3px;
+	padding-right:3px;
+	margin:1px;
+	font-size:14pt;
+	color:#000;
+	background-color:#fff;
+	border:solid black 2px;
+	font-weight:bold;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;	
+}
+
+.bigads{
+	border-radius: 10px;
+	border:solid black 2px;
+	background-color:#fff;
+	margin-bottom:5px;
+	padding:5px;
+	display:inline-block;
+}
+.bigads:hover{
+	background-color:#ddd;
+}
+.funcbuts{
+	top:-13px;
+	position:relative;
+	border-radius: 10px;
+	/*padding-left:3px;
+	padding-right:3px;*/
+	padding:5px;
+	height:40px;
+	margin:1px;
+	font-size:14pt;
+	color:#000;
+	background-color:#fff;
+	border:solid black 2px;
+	font-weight:bold;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;	
+}
+.funcbuts:hover{
+	color:#f15a24;
+	background-color:#000;
+}
+.combut:hover{
+	color:#f15a24;
+	background-color:#000;
+}
+.ads{
+	text-align:left;
+	font-size:8pt;
+	font-weight:bold;
+}
+
+#clipBoard-ta{
+	margin:0; padding:0; border:none; display:block;
+	width:100%;
+	height:135px;
+	resize:none;
+	background-color:#a3dda1;
+}
+#clipBoard {
+	background-color:#5ec95c;
+	width: 500px; 
+	position: fixed;
+	border:solid 1px black;
+}
+
+
+
+#settings {
+	border:solid 1px black;
+	box-sizing: border-box;
+	border-left-color: rgb(102, 102, 102);
+}
+#settingsArea {
+	box-sizing: border-box;
+	background-color: rgb(52, 55, 57);
+}
+
+
+.pinkbut{
+	background-color:#F6B3FF;
+}
+
+#commandOutput-ta{
+	margin:0; padding:0; border:none; display:block;
+	width:100%;
+	height:135px;
+	resize:none;
+	   
+           
+
+}
+#commandOutput, #diffDisplayDiv {
+	width: 500px; 
+	position: fixed;
+	/*border:solid 1px black;*/
+}
+
+#commandListDiv, #historyDiv {
+	width:1000px;
+	position: fixed;
+
+}
+
+
+#commandInput-ta{
+	margin:0; padding:0; border:none; display:block;
+	width:100%;
+	height:135px;
+	resize:none;
+	background-color:#f4c741;
+}
+#commandInput {
+	background-color:#f4aa42;
+	width: 500px; 
+	position: fixed;
+	border:solid 1px black;
+}
+.yellowbut{
+	background-color:#f4c741;
+}
+.greenbut{
+	background-color:#a3dda1;
+}
+.bluebut{
+	background-color:#719fe8;
+}
+.nbtKey{
+	width:100px;
+	text-align:right;
+	background-color:#eea;
+}
+.nbtVal{
+	text-align:left;
+}
+.aTable{
+	border-collapse: collapse;
+}
+
+table.aTable th td {
+    border-style:none;
+	text-align:center;
+	padding:2px;
+}
+.fLabel200{
+	text-align:right;
+	display: inline-block;
+	width:200px;
+	margin-top:5px;
+}
+
+.fLabel100{
+	text-align:right;
+	display: inline-block;
+	width:130px;
+	margin-top:5px;
+}
+
+.fLabel40{
+	text-align:right;
+	display: inline-block;
+	width:40px;
+	margin-top:5px;
+}
+.fLabel150{
+	text-align:right;
+	display: inline-block;
+	width:150px;
+	margin-top:5px;
+}
+
+.pageSetup{
+	float:left;
+}
+.pagePreview{
+	
+	background-color:#f8f2c2;
+	width:200px;
+	height:300px;
+	font-size:12pt;
+	margin-left:5px;
+	font-family:"Courier", monospace;
+	text-align:left;
+	margin-bottom:5px;
+}
+.signPreview{
+	
+	background-color:#f8f2c2;
+	width:180px;
+	height:80px;
+	font-size:12pt;
+	margin-left:5px;
+	margin-bottom:5px;
+	font-family:"Courier", monospace;
+	text-align:center;
+}
+.tellrawPreview{
+	
+	background-color:#f8f2c2;
+	min-width:310px;
+	margin-bottom:5px;
+	font-size:12pt;
+	margin-left:5px;
+	font-family:"Courier", monospace;
+	text-align:center;
+}
+.hoverPreview{
+	display: inline-block;
+	 min-width: 50px;
+	background-color:#120312;
+	max-width:310px;
+	border:solid 2px #28055d;
+
+	font-size:12pt;
+	margin-left:5px;
+	font-family:"Courier", monospace;
+	text-align:left;
+}
+.pagePreviewFrame{
+	float:left;
+	text-align:center;
+}
+
+#executePane{
+	background-color:rgba(244, 119, 121, 0.5);
+	margin-bottom:3px;
+}
+#soundPane, #scoreboardPane,#teamPane,#effectPane,#givePane,#blockPane,#particlePane,#tellrawPane,#bossbarPane,#lootPane{
+	background-color:rgba(97, 171, 175, 0.5);
+}
+
+.fLabel70{
+	text-align:right;
+	display: inline-block;
+	width:70px;
+	margin-top:5px;
+}
+
+.fLabel180{
+	text-align:right;
+	display: inline-block;
+	width:180px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.enchantLevel{
+	white-space:nowrap;
+}
+
+.itemSelectControl{
+	 background-color:#FFD783;
+	 overflow:hidden;
+	
+}
+
+.multiitemSelectControl{
+	 background-color:#D7FF83;
+	 overflow:hidden;
+	
+}
+
+.HideFlagsControl{
+	width:400px;
+	background-color:#fdd;
+	white-space: initial;
+	 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+.Offhand{
+	background-color:#FFD783;
+}
+.Holding{
+	background-color:#FFFE83;
+}
+.Head{
+	background-color:#ABE877;
+}
+.Body{
+	background-color:#90FF9A;
+}
+.Leg{
+	background-color:#77E8B7;
+}
+.Boot{
+	background-color:#73dab0;
+}
+.DisabledSlotsControl{
+	background-color:#dff;
+}
+#warning{
+	border-color:red;
+	margin:5px;
+	width:550px;
+
+}
+.amErrorRow{
+	background-color:red;
+	
+}
+.amErrorMessage{
+	color:red;
+	display:inline-block;
+	width:600px;
+}
+.roundedDiv{
+	display: inline-block;
+	vertical-align: text-top;
+	border-radius: 10px;
+	border: 2px solid #000;
+	margin-right:5px;
+	padding:5px;
+}
+.fallingBlock{
+	display:block;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
+.EnchantmentsControlSingle{
+	width:300px;
+	white-space: initial;
+	
+}
+.EnchantmentsControl{
+	width:560px;
+	white-space: initial;
+	 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+.AEControl{
+	background-color:#ddf;
+
+}
+.smallTF{
+	width:20px;
+}
+
+.medTF{
+	width:50px;
+}
+.bigTF{
+	width:100px;
+}
+.verybigTF{
+	width:300px;
+}
+.AMControl{
+	background-color:#ffd;
+	
+}
+
+.PoseControl, .MemoriesControl{
+	background-color:#dfd;
+}
+
+.PassengerPane{
+	overflow:visible;
+	display: inline-block;
+	vertical-align: text-top;
+}
+.ExplosionPane{
+	overflow:visible;
+	display: inline-block;
+	vertical-align: text-top;
+
+}
+.tsScorePane{
+	overflow:visible;
+	display: inline-block;
+	vertical-align: text-top;
+
+}
+.TradePane, .GossipPane{
+	overflow:visible;
+	display: inline-block;
+	vertical-align: text-top;
+
+}
+.explosion{
+	background-color:#ffd;
+	overflow:visible;
+	display:block;
+	vertical-align: text-top;
+}
+.trade{
+	background-color:#ffd;
+	overflow:visible;
+	display:block;
+	vertical-align: text-top;
+}
+
+.gossip{
+	background-color:#fdd;
+	overflow:visible;
+	display:block;
+	vertical-align: text-top;
+}
+#TSPane{
+	background-color:#70c9a4;
+}
+#exe_TSPane{
+	background-color:#4fa883;
+}
+
+.score{
+	background-color:#ffd;
+	overflow:visible;
+	display:block;
+	vertical-align: text-top;
+}
+.SpawnPotentialPane{
+	overflow:visible;
+	display: inline-block;
+	vertical-align: text-top;
+}
+.passengerContainer{
+	min-width:600px;
+
+}
+
+
+.anchorButton{
+	white-space: nowrap;
+	margin:1px;
+	border-radius: 5px;
+	padding-left:1px;
+	padding-right:1px;
+	font-size:10pt;
+	color:#000;
+	background-color:#fff;
+	border:solid black 1px;
+	font-weight:bold;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;	
+}
+
+
+
+.specialButton{
+	color: rgb(232, 230, 227);
+        background-color: rgb(24, 26, 27);
+        border-top-color: rgb(102, 102, 102);
+        border-right-color: rgb(102, 102, 102);
+        border-bottom-color: rgb(102, 102, 102);
+        border-left-color: rgb(102, 102, 102);
+        text-decoration-color: initial;
+}
+
+.redX{
+	color:red;
+	font-weight:bold;
+	white-space: nowrap;
+	margin:1px;
+	border-radius: 5px;
+	padding-left:1px;
+	padding-right:1px;
+	font-size:10pt;
+	background-color:#fff;
+	border:solid black 1px;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;
+}
+
+.buttonNoBorder, .navButton {
+	font-weight:bold;
+	white-space: nowrap;
+	padding-left:7px;
+	padding-right:7px;
+	font-size:10pt;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;
+}
+
+.noBorder{
+	border:none;
+}
+
+.fwColor{
+	border-radius:3px;
+	border: 1px solid #000;
+	padding:5px;
+	margin:3px;
+}
+
+.greenPlus{
+	color:green;
+	font-weight:bold;
+	white-space: nowrap;
+	margin:1px;
+	border-radius: 5px;
+	padding-left:1px;
+	padding-right:1px;
+	font-size:10pt;
+	background-color:#fff;
+	border:solid black 1px;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;
+}
+/* ,.shown,.hiding*/
+.showHide{
+	color:blue;
+	font-weight:bold;
+	white-space: nowrap;
+	margin:1px;
+	border-radius: 5px;
+	padding-left:1px;
+	padding-right:1px;
+	font-size:10pt;
+	background-color:#fff;
+	border:solid black 1px;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.ticks{
+	display:inline-block;
+	width:70px;
+	color:purple;
+	font-weight:bold;
+	white-space: nowrap;
+	margin:1px;
+	text-align:center;
+	border-radius: 5px;
+	padding-left:1px;
+	padding-right:1px;
+	font-size:10pt;
+	background-color:#fff;
+	border:solid black 1px;
+	font-family:"Arial",sans-serif;
+	text-decoration:none;
+}
+
+
+.writable_book{
+	resize: none;
+	background-color:#f8f2c2;
+	width:200px;
+	height:300px;
+	font-size:12pt;
+	margin:5px;
+	padding:5px;
+	font-family:"Courier", monospace;
+	text-align:left;
+}
+.writableBookFrame{
+	text-align:center;
+	margin-left:130px;
+	float:left;
+}
+
+
+
+html {
+    background-color: #181a1b !important;
+}
+html,
+body,
+input,
+textarea,
+select,
+button {
+    background-color: #181a1b;
+}
+html,
+input,
+textarea,
+select,
+button {
+    border-color: #575757;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #4c4c4c;
+}
+::placeholder {
+    color: #bab5ab;
+}
+::selection {
+    background-color: #005ccc;
+    color: #ffffff;
+}
+::-moz-selection {
+    background-color: #005ccc;
+    color: #ffffff;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #545b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #1c1e1f;
+    color: #c5c1b9;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2a2c2e;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #323537;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #3d4043;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+.combut, .specialButton {
+    color: rgb(232, 230, 227);
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+.funcbuts {
+    color: rgb(232, 230, 227);
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+.yellowbut {
+    background-color: rgb(156, 119, 9);
+}
+.bluebut {
+    background-color: rgb(19, 57, 117);
+}
+.greenbut {
+    background-color: rgb(30, 79, 29);
+}
+#commandOutput, #commandInput, #clipBoard, #commandListDiv, #historyDiv, #diffDisplayDiv {
+    background-color: rgb(19, 57, 117);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+}
+#commandOutput-ta, #commandInput-ta, #clipBoard-ta, #commandList, #history, #diffDisplay {
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    background-color: rgb(52, 55, 57);
+}
+
+
+
+
+
+.greenPlus {
+    color: rgb(127, 255, 127);
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+#executePane {
+    background-color: rgba(123, 10, 12, 0.5);
+}
+#dialogbox {
+    background: #222;
+}
+
+
+.showHide {
+    color: rgb(51, 125, 255);
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+.ticks {
+    color: rgb(255, 127, 255);
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+.redX {
+    color: rgb(255, 51, 51);
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+
+
+.tellrawPreview {
+    background-color: rgb(79, 71, 9);
+}
+.anchorButton {
+    color: rgb(232, 230, 227);
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+.score {
+    background-color: rgb(71, 71, 0);
+}
+.itemSelectControl {
+    background-color: rgb(125, 85, 0);
+}
+.AMControl {
+    background-color: rgb(71, 71, 0);
+}
+.mButton {
+    color: rgb(232, 230, 227);
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+.EnchantmentsControl, .EnchantmentsControlSingle {
+    background-color: rgb(71, 0, 71);
+}
+.HideFlagsControl {
+    background-color: rgb(71, 0, 0);
+}
+.roundedDiv {
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+}
+#soundPane,
+#scoreboardPane,
+#teamPane,
+#effectPane,
+#givePane,
+#blockPane,
+#particlePane,
+#tellrawPane,
+#bossbarPane,
+#lootPane {
+    background-color: rgba(49, 94, 97, 0.5);
+}
+.passengerContainer {
+    background-color: rgba(49, 94, 97, 0.5) !important;
+}
+#TSPane {
+    background-color: rgb(37, 99, 74);
+}
+.AEControl {
+    background-color: rgb(34, 36, 37);
+}
+.alertify {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgba(102, 102, 102, 0.7);
+    border-right-color: rgba(102, 102, 102, 0.7);
+    border-bottom-color: rgba(102, 102, 102, 0.7);
+    border-left-color: rgba(102, 102, 102, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 3px;
+}
+#community {
+    background-color: #4f4915;
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+}
+.navButton {
+    color: rgb(51, 125, 255);
+    background-color: none;
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    text-decoration-color: initial;
+}
+.pageButton {
+    border-top-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+    border-left-color: rgb(102, 102, 102);
+    color: rgb(232, 230, 227);
+    background-color: rgb(24, 26, 27);
+}
+table.searchResults tr.srRowLight {
+    background-color: rgb(34, 36, 37);
+}
+table.searchResults tr.srRowDark {
+    background-color: rgb(44, 46, 48);
+}
+table.searchResults th {
+    background-color: rgb(44, 46, 48);
+}
+
+#commandList tr:nth-child(odd) {
+	background-color: rgb(34, 36, 37);
+}
+#commandList tr:nth-child(even) {
+	background-color: rgb(44, 46, 48);
+}
+#history tr:nth-child(odd) {
+	background-color: rgb(34, 36, 37);
+}
+#history tr:nth-child(even) {
+	background-color: rgb(44, 46, 48);
+}
+* {
+    scrollbar-color: #2a2c2e #1c1e1f;
+}
+
+.explosion {
+    background-color: rgb(71, 71, 0);
+}
+
+.trade {
+    background-color: rgb(71, 71, 0);
+}
+.PoseControl, .MemoriesControl, .DisabledSlotsControl {
+    background-color: rgb(0, 71, 0);
+}
+.gossip {
+    background-color: rgb(71, 0, 0);
+}
+
+.pool{
+	background-color: rgb(0, 71, 0);	
+}
+.entry{
+
+	background-color: rgb(71, 0, 0);
+}
+table.update117{
+	width:600px;
+	border-collapse:collapse;
+}
