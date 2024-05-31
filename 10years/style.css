@@ -1,0 +1,106 @@
+h2{
+	font-family: 'Arial', sans-serif;
+	font-weight:bold;
+	color:black;
+	font-size:16px;
+	margin-bottom:-15px;
+}
+
+h1{
+	font-family: 'Bangers', cursive;
+	color:black;
+	font-size:30px;
+
+}
+.mainHeading{
+	font-family: 'Bangers', cursive;
+}
+p, li{
+	font-family: 'Raleway', sans-serif;
+}
+q:before, q:after {
+	content: '';
+	content: none;
+}
+#navigation{
+	margin-top:5px;	
+	margin-bottom:5px;
+	text-align:center;
+}
+
+body{
+	background:#190400;
+	font-family:Arial, sans-serif;
+}
+
+#allContent{
+	background-color:white;
+	width:670px;
+	border-radius:30px;
+	border:solid 2px black;
+	padding:20px;
+	margin:0 auto;
+}
+
+#banner{
+	background: rgb(210,31,0);
+background: radial-gradient(circle, rgba(210,31,0,1) 6%, rgba(0,0,0,1) 57%);
+	border-radius:20px;
+	border:solid 2px black;
+	text-align:center;
+	padding:5px;
+}
+
+.bannerText{
+	color:white;
+	font-size:70px;
+	text-shadow:2px 2px 5px black;
+	font-family: 'Bangers', cursive;
+}
+
+.myButton {
+    box-shadow:inset 0px 1px 0px 0px #efc3ab;
+    background:linear-gradient(to bottom, #d21f00 5%, rgba(255,99,0,1) 100%);
+    background-color:#d21f00;
+    border-radius:6px;
+    border:1px solid #ff1f00;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    margin-bottom:5px;
+    text-decoration:none;
+}
+
+
+.myButton:hover {
+	background:linear-gradient(to bottom,#ff1f00 5%, #050a01 100%);
+	background-color:rgba(255,99,0,1);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.items{
+	float:left;
+}
+
+/*
+.label{
+	width:100px;
+	text-align:right;
+	display:inline-block;
+	vertical-align:top;
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+.field, textarea{
+	margin-left:5px;
+	border-radius:5px;
+	background-color:#ffccff;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width:200px;
+}*/
