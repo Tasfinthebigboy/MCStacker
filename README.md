@@ -1,4 +1,4 @@
-# MCStacker Offline Edition 1.20.6
+# MCStacker Offline Edition 1.21/.1
 
 Welcome to MCStacker Offline Edition
 Here you can get the free offline edition of https://mcstacker.net
